@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  presets: [require("nativewind/preset")],
   content: [
-    // Ensure this points to your source code
-    './src/app/**/*.{js,tsx,ts,jsx}',
-    // If you use a `src` directory, add: './src/**/*.{js,tsx,ts,jsx}'
-    // Do the same with `components`, `hooks`, `styles`, or any other top-level directories
+    "./App.{js,jsx,ts,tsx}",
+    "./app/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {},
